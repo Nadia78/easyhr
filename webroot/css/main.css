@@ -1,0 +1,25 @@
+.form-padding {
+	padding: 3% 35%;
+	display: none;
+}
+
+.padding{
+	margin-top: 10px;
+}
+#liste {
+ text-align: left;
+}
+#radHomme, #radFemme {
+	display: inline-block;
+	float: left;
+}
+#liste {
+	font-size: 2em;
+}
+.tailleText {
+	font-size: 2.5em;
+	text-align: center;
+}
+#tailleContact {
+	font-size: 1.5em;
+}
