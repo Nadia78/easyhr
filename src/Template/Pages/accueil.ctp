@@ -27,32 +27,22 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <meta name="author" content="">
 
     <title>
-        <?= $cakeDescription ?>:
-        <?= $this->fetch('title') ?>
+       Accueil
     </title>
 
-    <?= $this->Html->meta('icon') ?>
+    // <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css('bootstrap.min.css') ?>
-    <?= $this->Html->css('grayscale.css') ?>
-    <?= $this->Html->css('font-awesome.min.css') ?>
-    <?= $this->Html->css('main.css') ?>
+    <!-- chargement des css -->
+    <?= $this->Html->css('bootstrap.min') ?>
+    <?= $this->Html->css('grayscale') ?>
+    <?= $this->Html->css('font-awesome.min') ?>
+    <?= $this->Html->css('main') ?>
+    <?= $this->Html->css(array('bordered-pulled','fixed-width','icons','larger','list','mixings','path','rotated-flipped','spinning','stacked','variable')) ?>
 
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
-      <?php
-       // echo $this->Html->script('bootstrap'); 
-       // echo $this->Html->script('bootstrap.min'); 
-       // echo $this->Html->script('grayscale'); 
-       // echo $this->Html->script('jquery.easing.min'); 
-      
-       
-       // echo $this->Html->script('jquery-2.1.4.min'); 
-       echo $this->Html->script('main'); 
-       ?>
 
-   
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -234,5 +224,13 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <div class="container text-center">
             <p>Copyright &copy; Your Website 2014</p>
         </div>
+        <!-- chargement des scripts -->
+        <?= $this->Html->script('bootstrap'); ?>
+        <?= $this->Html->script('bootstrap.min'); ?>
+        <?= $this->Html->script('grayscale'); ?>
+        <?= $this->Html->script('jquery.easing.min');  ?>
+        <?= $this->Html->script('jquery-2.1.4.min'); ?>
+        <?= $this->Html->script('main'); ?>
+     
     </footer>
 </html>
