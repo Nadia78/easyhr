@@ -1,3 +1,6 @@
+<?php $this->layout="layoutConnected" ?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
