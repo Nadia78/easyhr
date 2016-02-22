@@ -115,19 +115,23 @@ class UsersController extends AppController
     /**************************login register*********************************************/
 
     public function login(){
-        if($this_>request->is('post')) {
+        if($this->request->is('post')) {
             $user = $this->Auth->identify();
             if($user) {
                 $this->Auth->setUser($user);
                 return $this->redirect[$this->Auth->redirectUrl()];
             }
+            else{
 
             // User not identified
-            $this->Flash->error(your username or password is incorrect);
+            $this->Flash->error('your username or password is incorrect');
+            }
         }
     }
     // login 3. template/user: creer login ds template/users: add.ctp, edit;ctp
 /*****************************fin login method************************************/
-}   public function logout() {
-    
-}
+       public function logout() {
+
+    }
+}   
+
