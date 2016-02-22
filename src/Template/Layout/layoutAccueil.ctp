@@ -99,19 +99,20 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
                         <button type="button" id="btnEntrepriseId" class="btn btn-primary btn-lg btn-block" >Vous êtes une entreprise partenaire</button>
 
-
-                        <div id="form1" class="form-padding">
-                            <form  method="post"  action="#" >
-                                <div class="form-group">
-                                    <?= $this->Form->create($user,['action' => 'login']); ?>
+                                <!-- 'User',['url' => ''] -->
+                                    <?= $this->Form->create(); ?>
                                     <?= $this->Form->input('email',['type' => 'email'],['label' => false]); ?>
                                     <?= $this->Form->input('password',['type' => 'password']); ?>
-                                    <?= $this->Form->button('action',['type' => 'submit']); ?>
+                                    <?= $this->Form->button('Envoyer',['type' => 'submit']); ?>
                                     <?= $this->Form->end(); ?>
+
+<!--                         <div id="form1" class="form-padding">
+ -->                            <!-- <form  method="post"  action="#" > -->
+                                <!-- <div class="form-group">
                                     <input type="email" class="form-control" name="" placeholder=" rh@entreprise.com" >
                                     <button  type="submit"  class="btn btn-primary  padding" name="action" value="send" >Envoyer</button>
-                                </div>
-                            </form>
+                                </div> -->
+                           <!--  </form> -->
                         </div >
 
                         <button type="button" id="btnSalarieId" class="btn btn-success btn-lg btn-block" >Vous êtes salarié d'une entreprise partenaire</button>
